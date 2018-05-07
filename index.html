@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SunmLight</title>
     <style>
         *{
             margin: 0;
@@ -17,24 +17,38 @@
         a:hover{
             font-size: 20px;
         }
-        h1:hover{
-            font-size: 40px;
+
+        #divsunmlight,#divstart{
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        #divhelp{
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+        #divsunmlight:hover #divhelp{
+            display: block;
         }
     </style>
 </head>
 <body>
 <div style="height: 30px;background-color: #5c5c5c">
-    <a href="#" style="text-align: right ;display:block;line-height: 30px ;margin-right: 20px">login</a>
+    <span style="float: right;display:inline-block;margin-right: 20px">
+    <a href="#" style="line-height: 30px ">login</a>
+    </span>
 </div>
-<br>
-<br>
-<br>
-<br>
-<div style="width: 100% ;height: 80px; text-align: center;margin-top: 20px">
-    <h1>SunMlight</h1><br><br>
+<div id="divsunmlight">
+    <h1 style="cursor: help">SunMlight</h1>
+    <div id="divhelp">
+        <p>A Python and Computer player</p>
+    </div>
 </div>
-<div style="width: 100% ;height: 80px; text-align: center;margin-top: 20px">
+<div id="divstart">
     <a href="" style="color: #5c5c5c"><h2>start</h2> </a>
 </div>
+
 </body>
 </html>
